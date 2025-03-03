@@ -1,19 +1,56 @@
-# Interferometric Focal Planes
+# **Official Repository for *Interferometric Focal Planes***
 
-This repository contains the supporting code for the article **"Interferometric Focal Planes" (under review)**. The code implements Monte Carlo simulations to estimate parameters in several prototype objects, including:
+This repository contains the supporting code for the article **"*Interferometric Focal Planes*" (under review)**. The code implements Monte Carlo simulations to estimate parameters in several prototype objects, including:
 
-- Two point sources  
-- A line source  
-- An edge source  
-- A right-angle source  
+- Two point sources
+- A line source
+- An edge source
+- A right-angle source
 
-These simulations explore **fixed and adaptive measurement strategies** for mutual intensity measurement and compare them with the estimation results from intensity measurements. **Jacobian matrices** of the forward models are also calculated to determine the degrees of freedom of the system.
+These simulations explore fixed and adaptive measurement strategies for mutual intensity measurement and compare them with the estimation results from intensity measurements. Jacobian matrices of the forward models are also calculated to determine the degrees of freedom of the system.
 
-## ⚙️ **Requirements**
+---
 
-This code is written in **MATLAB R2022b** and requires the following toolboxes:
+## 📌 **Code Structure**
 
-- **Parallel Computing Toolbox** (for `parfor`, used in Monte Carlo simulations)  
-- **Optimization Toolbox** (for `fminunc`, used in Maximum Likelihood Estimation)  
+The code is organized into different folders, each corresponding to a prototype object. Each folder contains three MATLAB scripts:
 
-If running the code without a **Parallel Computing Toolbox**, replace `parfor` loops with `for` loops to ensure compatibility.
+1. **Main Program** (`*_Estimation.m`)  
+   - Runs Monte Carlo simulations for parameter estimation.  
+   - Implements fixed and adaptive measurement strategies.  
+   - Uses a forward model to simulate measurements.  
+   - Includes visualization code to generate comparison plots.  
+
+2. **Forward Model** (`Measure*.m`)  
+   - Defines the physical measurement process for the given object.  
+   - Used in the Monte Carlo simulations to generate synthetic data.  
+
+3. **Jacobian Calculation** (`Jacobian*.m`)  
+   - Computes the Jacobian matrix of the forward model.  
+
+   - Not used in Monte Carlo simulations, but provides theoretical insights.  
+
+   - Used for visualizing degrees of freedom in parameter estimation. 
+
+- **two-points/Line/Edge/Corner**: Each folder contains a set of scripts for that geometry.
+
+---
+
+## 🚀 **How to Use**
+
+1. **Clone** or **download** this repository.
+
+2. Open **MATLAB** in the `SimulationCode` directory.
+
+3. Choose a geometry and run its **main script**. For example, for the corner (right-angle) source:
+
+   ```matlab
+   run Corner/CornerEstimation.m
+   ```
+
+## 📝 **Citation & License**
+
+If you use this code, please cite our article *Interferometric Focal Planes* (once published).
+
+**License**: This code is provided for research purposes only.
+
