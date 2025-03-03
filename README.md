@@ -13,7 +13,9 @@ These simulations explore fixed and adaptive measurement strategies for mutual i
 
 ## 📌 **Code Structure**
 
-The code is organized into different folders, each corresponding to a prototype object. Each folder contains three MATLAB scripts:
+The code is organized into different folders, each corresponding to a prototype object.
+
+Each folder contains three MATLAB scripts:
 
 1. **Main Program** (`*_Estimation.m`)  
    - Runs Monte Carlo simulations for parameter estimation.  
@@ -31,8 +33,6 @@ The code is organized into different folders, each corresponding to a prototype 
    - Not used in Monte Carlo simulations, but provides theoretical insights.  
 
    - Used for visualizing degrees of freedom in parameter estimation. 
-
-- **two-points/Line/Edge/Corner**: Each folder contains a set of scripts for that geometry.
 
 ---
 
