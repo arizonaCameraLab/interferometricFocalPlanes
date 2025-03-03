@@ -71,7 +71,17 @@ Each folder contains three MATLAB scripts:
    run Corner/CornerEstimation.m
    ```
 
+## ⚙️ **Requirements**
+
+This code is written in **MATLAB R2022b** and requires the following toolboxes:
+
+- **Parallel Computing Toolbox** (for `parfor`, used in Monte Carlo simulations)  
+- **Optimization Toolbox** (for `fminunc`, used in Maximum Likelihood Estimation)  
+
+If running the code without a **Parallel Computing Toolbox**, replace `parfor` loops with `for` loops to ensure compatibility.
+
 ## 📝 **Citation & License**
+
 
 If you use this code, please cite our article *Interferometric Focal Planes* (once published).
 
