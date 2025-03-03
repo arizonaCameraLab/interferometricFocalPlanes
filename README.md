@@ -1,6 +1,6 @@
 # **Official Repository for *Interferometric Focal Planes***
 
-This repository contains the supporting code for the article **"*Interferometric Focal Planes*" (under review)**. The code implements Monte Carlo simulations to estimate parameters in several prototype objects, including:
+This repository contains the supporting code for the article ***Interferometric Focal Planes* (under review)**. The code implements Monte Carlo simulations to estimate parameters in several prototype objects, including:
 
 - Two point sources
 - A line source
