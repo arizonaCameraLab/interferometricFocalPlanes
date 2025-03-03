@@ -1,4 +1,4 @@
-# **Support Code for "Interferometric Focal Planes"**
+# Interferometric Focal Planes
 
 This repository contains the supporting code for the article **"Interferometric Focal Planes" (under review)**. The code implements Monte Carlo simulations to estimate parameters in several prototype objects, including:
 
