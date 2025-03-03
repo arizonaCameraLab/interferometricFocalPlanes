@@ -13,6 +13,29 @@ These simulations explore fixed and adaptive measurement strategies for mutual i
 
 ## 📌 **Code Structure**
 
+SimulationCode/  
+│── Corner/  
+│   ├── CornerEstimation.m  
+│   ├── JacobianCorner.m  
+│   ├── MeasureCorner.m  
+│  
+│── Edge/  
+│   ├── EdgeEstimation.m  
+│   ├── JacobianEdge.m  
+│   ├── MeasureEdge.m  
+│  
+│── Line/  
+│   ├── Jacobian1Line.m  
+│   ├── LineEstimation.m  
+│   ├── MeasureLine.m  
+│  
+│── twopoints/  
+│   ├── Jacobian2P.m  
+│   ├── Measurel2P2D.m  
+│   ├── two_pts_estimation.m  
+│  
+├── README.md  
+
 The code is organized into different folders, each corresponding to a prototype object.
 
 Each folder contains three MATLAB scripts:
